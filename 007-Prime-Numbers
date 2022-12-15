@@ -1,0 +1,19 @@
+//Criar uma função que exiba números primos até um limite
+
+exibirPrimosAte(5)
+function exibirPrimosAte(borda){
+
+    for (let numero=2; numero<=borda; numero++){
+        let ehPrimo=true;
+
+        for( let divisor = 2; divisor<numero; divisor++){
+                if (numero % divisor ===0){
+                    ehPrimo=false;
+                    break
+                 
+                }
+        }
+
+    if (ehPrimo) console.log (numero);
+    }
+}
