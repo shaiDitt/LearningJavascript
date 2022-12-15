@@ -1,0 +1,19 @@
+// Criar um método para ler propriedade de um objeto e
+// mostrar as propriedades do tipo 'string'
+
+const filme={
+  Nome:'Shaini',
+  idade:28,
+  genero: 'Fêmea',
+  nacionalidade: 'Brasil',
+}
+
+exibirString(filme);
+
+function exibirString(obj){
+  for(i in obj){
+    if (typeof obj[i]==='string'){
+      console.log(obj[i])
+    }
+  }
+}
