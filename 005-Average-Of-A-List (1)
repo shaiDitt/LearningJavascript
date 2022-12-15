@@ -1,0 +1,21 @@
+const lista=[70,70,80]
+let soma=0
+console.log(mostrarMedia(lista))
+
+function calcularMedia(notas){
+  for(i=0; i<notas.length; i++){
+    soma += notas[i];
+  }
+  return soma/notas.length
+  
+  }
+
+function mostrarMedia(x){ 
+  let media = calcularMedia(x);
+  if (media<=59) return "Sua nota é F"
+  if (media<=69) return "Sua nota é D"
+  if (media<=79) return "Sua nota é C"
+  if (media<=89) return "Sua nota é B"
+  if (media<=100) return "Sua nota é A"
+
+}
