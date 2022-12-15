@@ -1,0 +1,20 @@
+// Divisível por 3 => Fizz
+// Divisível por 5 => Buzz
+// Divisível por 3 5 => FizzBuzz
+// Não dividível => entrada
+// Não é número => "Não é número"
+
+let result = checar(7)
+console.log(result)
+
+function checar(number){
+  if (typeof number !=='number') 
+    return 'Não é número';
+  if ( number % 3=== 0 && number % 5 === 0) 
+    return 'FizzBuzz';
+  if ( number % 3=== 0) 
+    return 'Fizz';
+  if ( number % 5=== 0) 
+    return 'Buzz';
+  return number;
+}
