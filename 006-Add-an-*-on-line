@@ -1,0 +1,12 @@
+//Criar uma função que exiba a quantidade de asteriscos na linha + 1
+asteriscos(10);
+
+
+function asteriscos(linhas){
+    let exibir = '';
+    for ( let i=0; i<linhas ; i++){
+        exibir += '*';
+        console.log (exibir);
+    }
+}
+
