@@ -1,0 +1,12 @@
+let x=3;
+let y=2;
+
+function numeroMaior(){
+    if (x>y){
+        console.log(x)
+    }
+    else{
+        console.log(y)
+    }
+}
+numeroMaior();
