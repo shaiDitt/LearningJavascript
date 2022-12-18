@@ -1,0 +1,24 @@
+function endereco(rua, cidade, cep){
+   return {
+      rua,
+      cidade,
+      cep
+   }
+}
+
+const x = endereco('a','b','c')
+const y = endereco('a','b','c')
+
+
+function referenciaIgual(x,y){
+   return   x.rua===y.rua &&
+            x.cidade === y.cidade &&
+            x.cep === y.cep
+}
+
+console.log (referenciaIgual(x,y));
+
+function memoriaIgual(x,y){
+   return x=== y
+}
+console.log (memoriaIgual(x,y))
