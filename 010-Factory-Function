@@ -1,0 +1,13 @@
+function postagem (titulo, mensagem, autor){
+  return {
+   titulo,
+   mensagem,
+   autor,
+   visualizacoes: 0,
+   comentarios: [],
+   estaAoVivo: false
+  }
+}
+
+const teste = postagem ("a", "b", "c")
+console.log(teste); 
