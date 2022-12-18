@@ -1,0 +1,13 @@
+let postagem = {
+   titulo: "Aprendendo JS",
+   mensagem :"motivacional",
+   autor: "eu",
+   visualizacoes: 3,
+   comentarios:[
+      {autor: 'João',msg: 'IL'},
+      {autor: 'João',msg: 'IL'}
+   ],
+   estaAoVivo: true
+   }
+
+   console.log(postagem);
