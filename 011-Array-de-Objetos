@@ -1,0 +1,25 @@
+//Criar uma lista de objetos contendo simulando o filtro de preços de um site, com:
+// tooltip, minimo, maximo
+
+//Primeira opção: lista simples
+let faixa =[
+  {tooltip:'até R$100', minimo: 0, maximo: 100},
+  {tooltip:'até R$200', minimo: 100, maximo: 200},  
+  {tooltip:'R$300 ou mais', minimo: 200, maximo: 99990},
+]
+//Segunda opção: factory function
+function criarFaixa (tooltip, minimo, maximo){
+  return {
+    tooltip,
+    minimo,
+    maximo
+  }
+}
+
+let faixa2 =[
+  criarFaixa ('até R$100', 0, 100),
+  criarFaixa ('até R$200', 100, 200),
+  criarFaixa ('R$300 ou mais', 200, 99990)
+]
+console.log(faixa);
+console.log(faixa2);
