@@ -1,0 +1,10 @@
+const marcas =[
+    {nome: 'nestle', ano: 1987},
+    {nome: 'ROCHE', ano: 1997},
+    {nome: 'GAROTO', ano: 1995}
+]
+
+const encontrar = marcas.find(marcas => marcas.nome === 'nestle')
+    
+
+console.log(encontrar)
